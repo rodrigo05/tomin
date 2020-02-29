@@ -1,28 +1,35 @@
-# Adonis API application
+# Tomin <!-- omit in toc -->
 
-This is the boilerplate for creating an API server in AdonisJs, it comes pre-configured with.
+Aplicacion Neobanking de inclusión financiera.
 
-1. Bodyparser
-2. Authentication
-3. CORS
-4. Lucid ORM
-5. Migrations and seeds
+## Tabla de Contenido<!-- omit in toc -->
+- [Acceso a la api](#acceso-a-la-api)
+- [Ambiente del proyecto](#ambiente-del-proyecto)
+  - [Ejecución de la api](#ejecuci%c3%b3n-de-la-api)
 
-## Setup
+# Acceso a la api
+La api se encuentra publicada en la siguiente ruta:
 
-Use the adonis command to install the blueprint
+[Api tomin](http://tomin-env-2.eba-dymffph5.us-west-2.elasticbeanstalk.com/)
 
-```bash
-adonis new yardstick --api-only
+# Ambiente del proyecto
+
+* AWS
+  * API (Node Js - Adonis)
+  * PostgreSQL
+  * App móvil (Dart - Flutter)
+
+## Ejecución de la api
+
+Descargar el repo, configurar acceso a la bd y ejecutar lo siguiente
+
+Instalar el CLI de adonis para usar comandos de consola
+```shell
+npm i -g @adonisjs/cli
 ```
 
-or manually clone the repo and then run `npm install`.
-
-
-### Migrations
-
-Run the following command to run startup migrations.
-
-```js
+Preparar ambiente
+```shell
 adonis migration:run
+adonis serve --dev
 ```
